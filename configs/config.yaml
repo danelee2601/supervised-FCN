@@ -1,0 +1,17 @@
+dataset:
+  name: 'UCR'
+  subset_name: 'Adiac'
+  in_channels: 1
+  data_scaling: True
+  batch_size: 256 # 32 / 128
+  num_workers: 0
+
+exp_params:
+  LR: 0.001
+  weight_decay: 0.00001
+
+trainer_params:
+  gpus:
+    - 0
+  max_epochs: 1000
+
