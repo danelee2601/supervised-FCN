@@ -3,11 +3,11 @@ dataset:
   subset_name: 'Adiac'
   in_channels: 1
   data_scaling: True
-  batch_size: 256 # 32 / 128
+  batch_size: 256
   num_workers: 0
 
 exp_params:
-  LR: 0.001
+  LR: 0.001  # learning rate
   weight_decay: 0.00001
 
 trainer_params:
