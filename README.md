@@ -31,4 +31,4 @@ A training and test dataset split is the same as provided in the UCR archive, an
 - `example_pretrained_model_loading.py`: a template for loading a pretrained FCN.
 
 # Reference
-[1] Wang, Zhiguang, Weizhong Yan, and Tim Oates. "Time series classification from scratch with deep neural networks: A strong baseline." 2017 International joint conference on neural networks (IJCNN). IEEE, 2017. \
+[1] Wang, Zhiguang, Weizhong Yan, and Tim Oates. "Time series classification from scratch with deep neural networks: A strong baseline." 2017 International joint conference on neural networks (IJCNN). IEEE, 2017.
