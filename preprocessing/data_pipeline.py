@@ -30,9 +30,6 @@ def build_data_pipeline(config: dict, kind: str) -> (DataLoader, DataLoader, Dat
         train_dataset = Dataset("train", dataset_importer)
         return DataLoader(train_dataset, batch_size, num_workers=num_workers, shuffle=True,
                           drop_last=False)  # `drop_last=False` due to some datasets with a very small dataset size.
-    elif kind == 'valid':
-        train_dataset = Dataset("train", dataset_importer)
-        return DataLoader(train_dataset, batch_size, num_workers=num_workers, shuffle=True, drop_last=False)
     elif kind == 'test':
         test_dataset = Dataset("test", dataset_importer)
         return DataLoader(test_dataset, batch_size, num_workers=num_workers, shuffle=False, drop_last=False)

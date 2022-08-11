@@ -22,7 +22,7 @@ if __name__ == '__main__':
     config = load_yaml_param_settings(args.config)
 
     # data pipeline
-    train_data_loader, val_data_loader, test_data_loader = [build_data_pipeline(config, kind) for kind in ['train', 'valid', 'test']]
+    train_data_loader, test_data_loader = [build_data_pipeline(config, kind) for kind in ['train', 'test']]
 
     # fit
     train_exp = ExpFCN(config, len(train_data_loader.dataset), len(np.unique(train_data_loader.dataset.Y)))
@@ -33,7 +33,7 @@ if __name__ == '__main__':
                          **config['trainer_params'])
     trainer.fit(train_exp,
                 train_dataloaders=train_data_loader,
-                val_dataloaders=val_data_loader,)
+                val_dataloaders=test_data_loader,)
 
     # test
     trainer.test(train_exp, test_data_loader)
