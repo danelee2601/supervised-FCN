@@ -10,6 +10,13 @@ The training histories of FCN on all the UCR subset datasets are available [here
 
 A training and test dataset split is the same as provided in the UCR archive, and a test dataset is used as a validation set during training for better training progress tracking.
 
+# Optimizer
+- initial learning rate: 1e-3
+- learning rate scheduler: cosine learning rate scheduler
+- optimizer: AdamW
+- weight decay: 1e-5
+- max epochs: 1000
+- batch size: 256
+
 # Reference
 [1] Wang, Zhiguang, Weizhong Yan, and Tim Oates. "Time series classification from scratch with deep neural networks: A strong baseline." 2017 International joint conference on neural networks (IJCNN). IEEE, 2017. \
-[2]
