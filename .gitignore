@@ -129,7 +129,8 @@ dmypy.json
 .pyre/
 
 wandb/
-saved_models/
+#saved_models/
 .idea/
 datasets/*
 !datasets/__init__.py
+train_fcn_all_datasets.py
