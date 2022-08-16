@@ -4,9 +4,9 @@ import pytorch_lightning as pl
 from pytorch_lightning.callbacks import LearningRateMonitor
 from pytorch_lightning.loggers import WandbLogger
 
-from experiments.exp_train import ExpFCN
-from preprocessing.data_pipeline import build_data_pipeline
-from utils import *
+from supervised_FCN.experiments.exp_train import ExpFCN
+from supervised_FCN.preprocessing.data_pipeline import build_data_pipeline
+from supervised_FCN.utils import *
 
 
 def load_args():
@@ -38,4 +38,4 @@ if __name__ == '__main__':
     # test
     trainer.test(train_exp, test_data_loader)
 
-    save_model({f"{config['dataset']['subset_name']}": train_exp.fcn})
+    # save_model({f"{config['dataset']['subset_name']}": train_exp.fcn})

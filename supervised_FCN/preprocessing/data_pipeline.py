@@ -1,8 +1,8 @@
 from torch.utils.data import DataLoader
 
-from preprocessing.preprocess_ucr import DatasetImporterUCR, UCRDataset
-from preprocessing.preprocess_uea import DatasetImporterUEA, UEADataset
-from preprocessing.augmentations import Augmentations
+from supervised_FCN.preprocessing.preprocess_ucr import DatasetImporterUCR, UCRDataset
+from supervised_FCN.preprocessing.preprocess_uea import DatasetImporterUEA, UEADataset
+from supervised_FCN.preprocessing.augmentations import Augmentations
 
 
 def build_data_pipeline(config: dict, kind: str) -> (DataLoader, DataLoader, DataLoader):

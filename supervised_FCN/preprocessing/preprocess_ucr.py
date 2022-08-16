@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset
 from sklearn.preprocessing import LabelEncoder
 
-from utils import root_dir
+from supervised_FCN.utils import root_dir
 
 
 class DatasetImporterUCR(object):

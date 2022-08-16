@@ -1,6 +1,6 @@
 import os
 import torch
-from models.fcn import FCNBaseline
+from supervised_FCN.models.fcn import FCNBaseline
 
 
 if __name__ == '__main__':

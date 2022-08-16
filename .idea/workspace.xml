@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="abce78f9-2e1e-4abd-a398-0ace9e0cf79e" name="Changes" comment="add some __init__.py to make some directories packages.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.imgs/fcn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_compute_FID.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_compute_IS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_data_loading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_pretrained_model_loading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/exp_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/exp_train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fcn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/augmentations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/data_pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/preprocess_ucr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/preprocess_uea.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ACSF1.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Adiac.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/AllGestureWiimoteX.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/AllGestureWiimoteY.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/AllGestureWiimoteZ.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ArrowHead.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/BME.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Beef.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/BeetleFly.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/BirdChicken.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/CBF.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Car.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Chinatown.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ChlorineConcentration.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/CinCECGTorso.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Coffee.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Computers.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/CricketX.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/CricketY.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/CricketZ.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Crop.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DiatomSizeReduction.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DistalPhalanxOutlineAgeGroup.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DistalPhalanxOutlineCorrect.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DistalPhalanxTW.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DodgerLoopDay.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DodgerLoopGame.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/DodgerLoopWeekend.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ECG200.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ECG5000.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ECGFiveDays.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/EOGHorizontalSignal.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/EOGVerticalSignal.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Earthquakes.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ElectricDevices.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/EthanolLevel.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FaceAll.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FaceFour.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FacesUCR.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FiftyWords.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Fish.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FordA.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FordB.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FreezerRegularTrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/FreezerSmallTrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Fungi.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GestureMidAirD1.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GestureMidAirD2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GestureMidAirD3.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GesturePebbleZ1.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GesturePebbleZ2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GunPoint.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GunPointAgeSpan.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GunPointMaleVersusFemale.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/GunPointOldVersusYoung.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Ham.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/HandOutlines.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Haptics.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Herring.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/HouseTwenty.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/InlineSkate.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/InsectEPGRegularTrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/InsectEPGSmallTrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/InsectWingbeatSound.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ItalyPowerDemand.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/LargeKitchenAppliances.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Lightning2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Lightning7.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Mallat.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Meat.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MedicalImages.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MelbournePedestrian.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MiddlePhalanxOutlineAgeGroup.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MiddlePhalanxOutlineCorrect.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MiddlePhalanxTW.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MixedShapesRegularTrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MixedShapesSmallTrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/MoteStrain.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/NonInvasiveFetalECGThorax1.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/NonInvasiveFetalECGThorax2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/OSULeaf.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/OliveOil.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PLAID.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PhalangesOutlinesCorrect.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Phoneme.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PickupGestureWiimoteZ.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PigAirwayPressure.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PigArtPressure.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PigCVP.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Plane.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/PowerCons.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ProximalPhalanxOutlineAgeGroup.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ProximalPhalanxOutlineCorrect.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ProximalPhalanxTW.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/RefrigerationDevices.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Rock.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ScreenType.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SemgHandGenderCh2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SemgHandMovementCh2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SemgHandSubjectCh2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ShakeGestureWiimoteZ.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ShapeletSim.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ShapesAll.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SmallKitchenAppliances.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SmoothSubspace.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SonyAIBORobotSurface1.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SonyAIBORobotSurface2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/StarLightCurves.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Strawberry.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SwedishLeaf.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Symbols.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/SyntheticControl.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ToeSegmentation1.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/ToeSegmentation2.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Trace.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/TwoLeadECG.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/TwoPatterns.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/UMD.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/UWaveGestureLibraryAll.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/UWaveGestureLibraryX.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/UWaveGestureLibraryY.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/UWaveGestureLibraryZ.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Wafer.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Wine.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/WordSynonyms.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Worms.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/WormsTwoClass.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/Yoga.ckpt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_fcn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2DAL1aD94YiaPB5wWR0fICPaUtm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\supervised-FCN" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train_fcn">
+    <configuration name="example_compute_FID (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="supervised-FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/supervised_FCN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/supervised_FCN/example_compute_FID.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="example_compute_IS (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="supervised-FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/supervised_FCN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/supervised_FCN/example_compute_IS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="example_data_loading" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="supervised-FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/supervised_FCN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/supervised_FCN/example_data_loading.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="example_pretrained_model_loading" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="supervised-FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/supervised_FCN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/supervised_FCN/example_pretrained_model_loading.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_fcn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="supervised-FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/supervised_FCN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/supervised_FCN/train_fcn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train_fcn" />
+        <item itemvalue="Python.example_pretrained_model_loading" />
+        <item itemvalue="Python.example_data_loading" />
+        <item itemvalue="Python.example_compute_IS (1)" />
+        <item itemvalue="Python.example_compute_FID (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abce78f9-2e1e-4abd-a398-0ace9e0cf79e" name="Changes" comment="" />
+      <created>1660136728413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660136728413</updated>
+      <workItem from="1660136731021" duration="23998000" />
+      <workItem from="1660658408039" duration="805000" />
+    </task>
+    <task id="LOCAL-00001" summary="completed.">
+      <created>1660157012154</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660157012154</updated>
+    </task>
+    <task id="LOCAL-00002" summary="try uploading a pretrained FCN on ACSF1.">
+      <created>1660205779613</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660205779613</updated>
+    </task>
+    <task id="LOCAL-00003" summary="save the pretrained models">
+      <created>1660205826884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660205826884</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated README.md">
+      <created>1660206630029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660206630029</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated README.md">
+      <created>1660206917115</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660206917115</updated>
+    </task>
+    <task id="LOCAL-00006" summary="made examples for data loading and pretrained model loading">
+      <created>1660208285089</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660208285089</updated>
+    </task>
+    <task id="LOCAL-00007" summary="remove val_data_loader and replace with test_data_loader">
+      <created>1660208302812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660208302812</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update README.md and config.yaml">
+      <created>1660208839364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660208839364</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update README.md">
+      <created>1660208980927</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660208980927</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update environment info.">
+      <created>1660209759764</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660209759764</updated>
+    </task>
+    <task id="LOCAL-00011" summary="adds examples of FID and IS computations.">
+      <created>1660552615547</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660552615547</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add some __init__.py to make some directories packages.">
+      <created>1660658485770</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660658485770</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed." />
+    <MESSAGE value="try uploading a pretrained FCN on ACSF1." />
+    <MESSAGE value="save the pretrained models" />
+    <MESSAGE value="updated README.md" />
+    <MESSAGE value="made examples for data loading and pretrained model loading" />
+    <MESSAGE value="remove val_data_loader and replace with test_data_loader" />
+    <MESSAGE value="update README.md and config.yaml" />
+    <MESSAGE value="update README.md" />
+    <MESSAGE value="update environment info." />
+    <MESSAGE value="adds examples of FID and IS computations." />
+    <MESSAGE value="add some __init__.py to make some directories packages." />
+    <option name="LAST_COMMIT_MESSAGE" value="add some __init__.py to make some directories packages." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/supervised_FCN$example_pretrained_model_loading.coverage" NAME="example_pretrained_model_loading Coverage Results" MODIFIED="1660208998460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/supervised_FCN$example_compute_FID.coverage" NAME="example_compute_FID Coverage Results" MODIFIED="1660550424168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/supervised_FCN$example_compute_IS.coverage" NAME="example_compute_IS Coverage Results" MODIFIED="1660552542897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/supervised_FCN$train_fcn_all_datasets.coverage" NAME="train_fcn_all_datasets Coverage Results" MODIFIED="1660160347675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/supervised_FCN$fcn.coverage" NAME="fcn Coverage Results" MODIFIED="1660138296263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/supervised_FCN$train_fcn.coverage" NAME="train_fcn Coverage Results" MODIFIED="1660156396572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/supervised_FCN$example_data_loading.coverage" NAME="example_data_loading Coverage Results" MODIFIED="1660207398895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

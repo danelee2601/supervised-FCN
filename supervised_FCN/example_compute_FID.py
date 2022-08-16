@@ -5,10 +5,9 @@ reference: https://machinelearningmastery.com/how-to-implement-the-frechet-incep
 """
 # example of calculating the frechet inception distance
 import torch
-import numpy as np
 from numpy import cov
-from numpy import trace
 from numpy import iscomplexobj
+from numpy import trace
 from numpy.random import random
 from scipy.linalg import sqrtm
 

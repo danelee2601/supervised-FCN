@@ -11,7 +11,7 @@ from sktime.datasets import load_from_tsfile, load_from_arff_to_dataframe
 
 from sklearn.preprocessing import LabelEncoder
 
-from utils import root_dir
+from supervised_FCN.utils import root_dir
 
 
 def extract_data(data):
