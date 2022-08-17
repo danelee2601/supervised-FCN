@@ -9,7 +9,6 @@ The trained FCN will be used to compute the FID (Fréchet Inception Distance) sc
 ```angular2html
 pip install supervised-fcn
 ```
-The used Anaconda environment can be found in `environment.yml`.
 
 # Load a Pretrained FCN 
 ```angular2html
