@@ -6,18 +6,29 @@ This repository offers a supervised-training code of FCN on all the subset datas
 The trained FCN will be used to compute the FID (Fréchet Inception Distance) score for evaluation of generated time series.
 
 # `pip` installation
-```
+```angular2html
 pip install supervised-fcn
 ```
 The used Anaconda environment can be found in `environment.yml`.
 
-# Prerequisite for Training
+# Load a Pretrained FCN 
+```angular2html
+from supervised_FCN.example_pretrained_model_loading import load_pretrained_FCN
+
+subset_dataset_name = ...  # 'Adiac'
+fcn = load_pretrained_FCN(subset_dataset_name)
+```
+
+# Training
+
+## Prerequisite for Training
 You need to download the UCR archive dataset and put it in `supervised_FCN/datasets/`. You can download it from [here](https://studntnu-my.sharepoint.com/:u:/g/personal/daesool_ntnu_no/EUVHWAlJRrZBnCZMAOdTR-cB3m_LP7Q10Y78meuzUAuIBQ?e=h9aGhi).
 Then, your `supervised_FCN/datasets` directory should have `supervised_FCN/datasets/UCRArchive_2018`.
 
-# Training
-- `supervised_FCN/train_fcn.py`: runs training of FCN on a subset dataset from the UCR archive. 
-- `supervised_FCN/configs/config.yaml`: is where you can set parameters and hyper-parameters for dataset loading and training. 
+## Training
+`supervised_FCN/train_fcn.py`: runs training of FCN on a subset dataset from the UCR archive.
+
+`supervised_FCN/configs/config.yaml`: is where you can set parameters and hyper-parameters for dataset loading and training. 
 
 # Training History
 The training histories of FCN on all the UCR subset datasets are available [here](https://wandb.ai/daesoolee/supervised-FCN?workspace=user-daesoolee).
@@ -33,8 +44,13 @@ A training and test dataset split is the same as provided in the UCR archive, an
 - batch size: 256
 
 # Example Templates
-- `supervised_FCN/example_data_loading.py`: a template for loading a subset dataset from the UCR archive.
-- `supervised_FCN/example_pretrained_model_loading.py`: a template for loading a pretrained FCN.
+`supervised_FCN/example_data_loading.py`: a template for loading a subset dataset from the UCR archive.
+
+`supervised_FCN/example_pretrained_model_loading.py`: a template for loading a pretrained FCN.
+
+`supervised_FCN/example_compute_FID.py`: an example of computing the FID score.
+
+`supervised_FCN/example_compute_IS.py`: an example of computing the IS (Inception Score).
 
 # Reference
 [1] Wang, Zhiguang, Weizhong Yan, and Tim Oates. "Time series classification from scratch with deep neural networks: A strong baseline." 2017 International joint conference on neural networks (IJCNN). IEEE, 2017.
