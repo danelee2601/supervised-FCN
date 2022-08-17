@@ -11,7 +11,7 @@ from sktime.datasets import load_from_tsfile, load_from_arff_to_dataframe
 
 from sklearn.preprocessing import LabelEncoder
 
-from supervised_FCN.utils import root_dir
+from supervised_FCN.utils import get_root_dir
 
 
 def extract_data(data):
@@ -38,7 +38,7 @@ class DatasetImporterUEA(object):
         following https://github.com/yuezhihan/ts2vec/blob/631bd533aab3547d1310f4e02a20f3eb53de26be/datautils.py#L79
         """
         # download_ucr_datasets()
-        self.data_root = root_dir.joinpath("datasets", "UEAArchive_2018", subset_name)
+        self.data_root = get_root_dir().joinpath("datasets", "UEAArchive_2018", subset_name)
 
         # fetch an entire dataset
         train_data = loadarff(str(self.data_root.joinpath(f'{subset_name}_TRAIN.arff')))[0]

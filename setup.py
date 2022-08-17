@@ -9,7 +9,7 @@ install_reqs = [f'{item["name"]}=={item["version"]}' for item in install_reqs]
 
 setup(
     name="supervised-fcn",  # pypi 에 등록할 라이브러리 이름
-    version="0.4.0",  # pypi 에 등록할 version (수정할 때마다 version up을 해줘야 함)
+    version="1.3.0",  # pypi 에 등록할 version (수정할 때마다 version up을 해줘야 함)
     description="it provides a pretrained FCN (Fully Convolutional Network).",
     author="Daesoo Lee",
     author_email="daesoolee2601@gmail.com",
@@ -18,12 +18,6 @@ setup(
     packages=find_packages(),
     install_requires=install_reqs,
     zip_safe=False,
-    # 중요한 부분
-    # entry_points={
-    #     "console_scripts": [
-    #         "hey = insutance.main:main"
-    #     ]
-    # },
-    package_data={},
+    package_data={'supervised_FCN': ['datasets/DataSummary_UCR.csv']},
     include_package_data=True
 )

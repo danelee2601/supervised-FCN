@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset
 from sklearn.preprocessing import LabelEncoder
 
-from supervised_FCN.utils import root_dir
+from supervised_FCN.utils import get_root_dir
 
 
 class DatasetImporterUCR(object):
@@ -24,7 +24,7 @@ class DatasetImporterUCR(object):
         :param data_scaling
         """
         # download_ucr_datasets()
-        self.data_root = root_dir.joinpath("datasets", "UCRArchive_2018", subset_name)
+        self.data_root = get_root_dir().joinpath("datasets", "UCRArchive_2018", subset_name)
 
         # fetch an entire dataset
         df_train = pd.read_csv(self.data_root.joinpath(f"{subset_name}_TRAIN.tsv"), sep='\t', header=None)

@@ -12,7 +12,7 @@ from supervised_FCN.utils import *
 def load_args():
     parser = ArgumentParser()
     parser.add_argument('--config', type=str, help="Path to the config data  file.",
-                        default=root_dir.joinpath('configs', 'config.yaml'))
+                        default=get_root_dir().joinpath('configs', 'config.yaml'))
     return parser.parse_args()
 
 
@@ -38,4 +38,4 @@ if __name__ == '__main__':
     # test
     trainer.test(train_exp, test_data_loader)
 
-    # save_model({f"{config['dataset']['subset_name']}": train_exp.fcn})
+    save_model({f"{config['dataset']['subset_name']}": train_exp.fcn})

@@ -11,7 +11,10 @@ from pathlib import Path
 from sklearn.preprocessing import MinMaxScaler
 
 
-root_dir = Path(__file__).parent.parent
+# root_dir = Path(__file__).parent.parent
+def get_root_dir():
+    root_dir = Path(__file__).parent.parent
+    return root_dir
 prefix = os.path.join('datasets', 'processed')
 
 
@@ -184,11 +187,11 @@ def save_model(models_dict: dict, dirname='saved_models'):
     """
     :param models_dict: {'model_name': model, ...}
     """
-    if not os.path.isdir(root_dir.joinpath(dirname)):
-        os.mkdir(root_dir.joinpath(dirname))
+    if not os.path.isdir(get_root_dir().joinpath(dirname)):
+        os.mkdir(get_root_dir().joinpath(dirname))
 
     for model_name, model in models_dict.items():
-        torch.save(model.state_dict(), root_dir.joinpath(dirname, model_name + '.ckpt'))
+        torch.save(model.state_dict(), get_root_dir().joinpath(dirname, model_name + '.ckpt'))
 
 
 def time_to_timefreq(x, n_fft: int, C: int):
