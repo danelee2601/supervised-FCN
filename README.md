@@ -17,6 +17,16 @@ from supervised_FCN.example_pretrained_model_loading import load_pretrained_FCN
 subset_dataset_name = ...  # 'Adiac'
 fcn = load_pretrained_FCN(subset_dataset_name)
 ```
+You can do the _forward propagation_ as follows:
+```angular2html
+x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
+out = fcn(x)  # (batch_size, n_classes)
+```
+You can obtain the representation (feature) vector (_i.e.,_ a vector right after the last pooling layer) as follows:
+```angular2html
+x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
+out = fcn(x, return_feature_vector=True)  # (batch_size, feature_dim)
+```
 
 # Training
 
