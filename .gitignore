@@ -1,0 +1,4 @@
+.idea/
+build/
+dist/
+supervised_fcn.egg-info/
