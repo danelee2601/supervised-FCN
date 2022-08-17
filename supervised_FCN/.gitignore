@@ -133,4 +133,5 @@ wandb/
 .idea/
 datasets/*
 !datasets/__init__.py
+!datasets/DataSummary_UCR.csv
 train_fcn_all_datasets.py
