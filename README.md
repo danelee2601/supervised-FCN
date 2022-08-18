@@ -20,7 +20,7 @@ fcn = load_pretrained_FCN(subset_dataset_name)
 You can do the **_forward propagation_** as follows:
 ```angular2html
 x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
-out = fcn(x)  # (batch_size, n_classes)
+out = fcn(x)  # (batch_size, n_classes); output right before the softmax layer.
 ```
 You can obtain the _**representation (feature) vector**_ (_i.e.,_ a vector right after the last pooling layer) as follows:
 ```angular2html
