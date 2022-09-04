@@ -45,6 +45,8 @@ fid_score = calculate_fid(z_real.cpu().detach().numpy(), z_fake.cpu().detach().n
 
 ### IS
 ```angular2html
+from supervised_FCN.example_compute_IS import calculate_inception_score
+
 x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
 out = fcn(x)  # (batch_size, n_classes); an output right before the softmax layer.
 p_yx = torch.nn.functional.softmax(out, dim=-1)  # p(y|x); (batch_size, n_classes)
