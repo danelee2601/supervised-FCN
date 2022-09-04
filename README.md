@@ -16,6 +16,7 @@ from supervised_FCN.example_pretrained_model_loading import load_pretrained_FCN
 
 subset_dataset_name = ...  # 'Adiac'
 fcn = load_pretrained_FCN(subset_dataset_name)
+fcn.eval()
 ```
 You can do the **_forward propagation_** as follows:
 ```angular2html
@@ -25,7 +26,30 @@ out = fcn(x)  # (batch_size, n_classes); an output right before the softmax laye
 You can obtain the _**representation (feature) vector**_ (_i.e.,_ a vector right after the last pooling layer) as follows:
 ```angular2html
 x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
-out = fcn(x, return_feature_vector=True)  # (batch_size, feature_dim)
+z = fcn(x, return_feature_vector=True)  # (batch_size, feature_dim)
+```
+
+# Compute FID and IS
+### FID
+```angular2html
+from supervised_FCN.example_compute_FID import calculate_fid
+
+x_real = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
+x_fake = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
+
+z_real = fcn(x_real, return_feature_vector=True)  # (batch_size, feature_dim)
+z_fake = fcn(x_fake, return_feature_vector=True)  # (batch_size, feature_dim)
+
+fid_score = calculate_fid(z_real.cpu().detach().numpy(), z_fake.cpu().detach().numpy())
+```
+
+### IS
+```angular2html
+x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
+out = fcn(x)  # (batch_size, n_classes); an output right before the softmax layer.
+p_yx = torch.nn.functional.softmax(out, dim=-1)  # p(y|x); (batch_size, n_classes)
+
+IS_mean, IS_std = calculate_inception_score(p_yx.cpu().detach().numpy())
 ```
 
 # Training
