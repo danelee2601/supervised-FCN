@@ -1,4 +1,4 @@
-﻿ID,Type,Name,Train ,Test ,Class,Length,ED (w=0),DTW (learned_w) ,DTW (w=100),Default rate,Data donor/editor
+﻿ID,Type,Name,Train,Test,Class,Length,ED (w=0),DTW (learned_w),DTW (w=100),Default rate,Data donor/editor
 1,Image,Adiac,390,391,37,176,0.3887,0.3913 (3),0.3964,0.9591,A. Jalba
 2,Image,ArrowHead,36,175,3,251,0.2,0.2000 (0),0.2971,0.6057,L. Ye & E. Keogh
 3,Spectro,Beef,30,30,5,470,0.3333,0.3333 (0),0.3667,0.8,K. Kemsley &  A. Bagnall
