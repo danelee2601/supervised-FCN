@@ -20,10 +20,10 @@ def load_pretrained_FCN(subset_dataset_name: str, in_channels: int = 1):
     """
     pretrained_zip_fnames = [fname for fname in os.listdir(get_root_dir().joinpath('saved_models')) if '.zip' in fname]
     is_temp_dir = False
+    zipped_pretrained_dirname = get_root_dir().joinpath('saved_models')
     if len(pretrained_zip_fnames) == 0:
         url = "https://drive.google.com/u/0/uc?id=14F-x1Ef5UTNrAVrzohKUe6trKB2IhUDm&export=download"
         try:
-            zipped_pretrained_dirname = get_root_dir().joinpath('saved_models')
             zipped_pretrained_model_fname = str(zipped_pretrained_dirname.joinpath('supervised-FCN-saved_models.zip'))
             gdown.download(url, zipped_pretrained_model_fname)
             shutil.unpack_archive(zipped_pretrained_model_fname, extract_dir=zipped_pretrained_dirname)
