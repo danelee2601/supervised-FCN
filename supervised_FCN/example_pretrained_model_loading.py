@@ -19,18 +19,26 @@ def load_pretrained_FCN(subset_dataset_name: str, in_channels: int = 1):
     :return:
     """
     pretrained_zip_fnames = [fname for fname in os.listdir(get_root_dir().joinpath('saved_models')) if '.zip' in fname]
-    is_temp_dir = False
-    zipped_pretrained_dirname = get_root_dir().joinpath('saved_models')
     if len(pretrained_zip_fnames) == 0:
-        url = "https://drive.google.com/u/0/uc?id=14F-x1Ef5UTNrAVrzohKUe6trKB2IhUDm&export=download"
+        temp_dir = Path(tempfile.gettempdir())
+        pretrained_zip_fnames = [fname for fname in os.listdir(temp_dir) if '.zip' in fname]
+        zipped_pretrained_dirname = temp_dir
+    else:
+        zipped_pretrained_dirname = get_root_dir().joinpath('saved_models')
+
+    # is_temp_dir = False
+    if len(pretrained_zip_fnames) == 0:
+        url = "https://drive.google.com/u/0/uc?id=1vUblPacIjBNyrghVhLsueY4DXI6GehKX&export=download"
         try:
             zipped_pretrained_model_fname = str(zipped_pretrained_dirname.joinpath('supervised-FCN-saved_models.zip'))
             gdown.download(url, zipped_pretrained_model_fname)
             shutil.unpack_archive(zipped_pretrained_model_fname, extract_dir=zipped_pretrained_dirname)
         except PermissionError:
-            is_temp_dir = True
-            temp_dir = tempfile.TemporaryDirectory()
-            zipped_pretrained_dirname = Path(temp_dir.name)
+            # is_temp_dir = True
+            # temp_dir = tempfile.TemporaryDirectory()
+            # zipped_pretrained_dirname = Path(temp_dir.name)
+            temp_dir = tempfile.gettempdir()
+            zipped_pretrained_dirname = Path(temp_dir)
             zipped_pretrained_model_fname = str(zipped_pretrained_dirname.joinpath('supervised-FCN-saved_models.zip'))
             gdown.download(url, zipped_pretrained_model_fname)
             shutil.unpack_archive(zipped_pretrained_model_fname, extract_dir=zipped_pretrained_dirname)
@@ -46,8 +54,8 @@ def load_pretrained_FCN(subset_dataset_name: str, in_channels: int = 1):
     ckpt_fname = zipped_pretrained_dirname.joinpath(f'{subset_dataset_name}.ckpt')
     fcn.load_state_dict(torch.load(ckpt_fname))
 
-    if is_temp_dir:
-        temp_dir.cleanup()
+    # if is_temp_dir:
+    #     temp_dir.cleanup()
     return fcn
 
 
