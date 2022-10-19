@@ -3,6 +3,7 @@ Fully Convolutional Network (FCN) was proposed in a paper [1]. FCN's architectur
 ![Architecture of FCN](.imgs/fcn.png)
 
 This repository offers a supervised-training code of FCN on all the subset datasets of the UCR archive. 
+The datasets are automatically downloaded when relevant codes are executed. They, also, can be manually downloaded [here](https://figshare.com/articles/dataset/UCR_Archive_2018/21359775).
 The trained FCN will be used to compute the FID (Fréchet Inception Distance) score for evaluation of generated time series.
 
 # `pip` installation
