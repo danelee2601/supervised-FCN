@@ -7,4 +7,4 @@ scikit_learn
 scipy
 sktime
 torchmetrics
-gdown
+wget
