@@ -1,5 +1,6 @@
 import torchmetrics
 from torch.optim.lr_scheduler import CosineAnnealingLR
+from sklearn.metrics import accuracy_score
 
 from supervised_FCN.models.fcn import FCNBaseline
 from supervised_FCN.experiments.exp_base import *
@@ -33,7 +34,8 @@ class ExpFCN(ExpBase):
         sch.step()
 
         # log
-        acc = torchmetrics.functional.accuracy(yhat, y)
+        acc = accuracy_score(y.flatten().detach().cpu().numpy(),
+                             yhat.argmax(dim=-1).flatten().cpu().detach().numpy())
         loss_hist = {'loss': loss, 'acc': acc}
 
         detach_the_unnecessary(loss_hist)
@@ -48,7 +50,8 @@ class ExpFCN(ExpBase):
         loss = self.criterion(yhat, y)
 
         # log
-        acc = torchmetrics.functional.accuracy(yhat, y)
+        acc = accuracy_score(y.flatten().detach().cpu().numpy(),
+                             yhat.argmax(dim=-1).flatten().cpu().detach().numpy())
         loss_hist = {'loss': loss, 'acc': acc}
 
         detach_the_unnecessary(loss_hist)
@@ -68,7 +71,8 @@ class ExpFCN(ExpBase):
         loss = self.criterion(yhat, y)
 
         # log
-        acc = torchmetrics.functional.accuracy(yhat, y)
+        acc = accuracy_score(y.flatten().detach().cpu().numpy(),
+                             yhat.argmax(dim=-1).flatten().cpu().detach().numpy())
         loss_hist = {'loss': loss, 'acc': acc}
 
         detach_the_unnecessary(loss_hist)
