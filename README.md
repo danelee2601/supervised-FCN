@@ -6,6 +6,11 @@ This repository offers a supervised-training code of FCN on all the subset datas
 The datasets are automatically downloaded when relevant codes are executed. They, also, can be manually downloaded [here](https://figshare.com/articles/dataset/UCR_Archive_2018/21359775).
 The trained FCN will be used to compute the FID (Fréchet Inception Distance) score for evaluation of generated time series.
 
+This repository is a part of our paper ["Vector Quantized Time Series Generation with a Bidirectional Prior Model", AISTATS 2023](https://arxiv.org/abs/2303.04743). There has been a lack of proper evaluation protocol to measure quality of generated samples in the time series generation (TSG) literature. 
+Traditionally, visual inspection of PCA and t-SNE mapping of generated samples have been used. In the paper, we propose to use Fréchet inception distance (FID) score and Inception Score (IS), following the evaluation protocol in computer vision. To compute the FID and IS, a pretrained classification model is needed. Unlike the computer vision field, there is no pretrained classification model for time series. Thus, we have trained the FCN models for all the UCR archive datasets and provide the pretrained FCN models here. 
+We hope that the follow-up papers in the TSG literature could be better compared with each other via the FID and IS-based evaluation protocol.
+
+
 # `pip` installation
 ```angular2html
 pip install supervised-fcn
@@ -90,3 +95,14 @@ A training and test dataset split is the same as provided in the UCR archive, an
 
 # Reference
 [1] Wang, Zhiguang, Weizhong Yan, and Tim Oates. "Time series classification from scratch with deep neural networks: A strong baseline." 2017 International joint conference on neural networks (IJCNN). IEEE, 2017.
+
+# Citation
+```
+@inproceedings{timevqvae2023,
+  title={Vector Quantized Time Series Generation with a Bidirectional Prior Model},
+  author={Lee, Daesoo and Malacarne, Sara and Aune, Erlend},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2023},
+  organization={PMLR}
+}
+```
