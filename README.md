@@ -12,12 +12,12 @@ We hope that the follow-up papers in the TSG literature could be better compared
 
 
 # `pip` installation
-```angular2html
+```python
 pip install supervised-fcn
 ```
 
 # Load a Pretrained FCN 
-```angular2html
+```python
 from supervised_FCN.example_pretrained_model_loading import load_pretrained_FCN
 
 subset_dataset_name = ...  # 'Adiac'
@@ -25,19 +25,19 @@ fcn = load_pretrained_FCN(subset_dataset_name)
 fcn.eval()
 ```
 You can do the **_forward propagation_** as follows:
-```angular2html
+```python
 x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
 out = fcn(x)  # (batch_size, n_classes); an output right before the softmax layer.
 ```
 You can obtain the _**representation (feature) vector**_ (_i.e.,_ a vector right after the last pooling layer) as follows:
-```angular2html
+```python
 x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
 z = fcn(x, return_feature_vector=True)  # (batch_size, feature_dim)
 ```
 
 # Compute FID and IS
 ### FID
-```angular2html
+```python
 from supervised_FCN.example_compute_FID import calculate_fid
 
 x_real = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
@@ -50,7 +50,7 @@ fid_score = calculate_fid(z_real.cpu().detach().numpy(), z_fake.cpu().detach().n
 ```
 
 ### IS
-```angular2html
+```python
 from supervised_FCN.example_compute_IS import calculate_inception_score
 
 x = torch.rand((1, 1, 176))  # (batch_size, in_channels, length)
