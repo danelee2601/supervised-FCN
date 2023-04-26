@@ -98,10 +98,12 @@ A training and test dataset split is the same as provided in the UCR archive, an
 
 # Citation
 ```
-@article{lee2023vector,
+@inproceedings{lee2023vector,
   title={Vector Quantized Time Series Generation with a Bidirectional Prior Model},
   author={Lee, Daesoo and Malacarne, Sara and Aune, Erlend},
-  journal={arXiv preprint arXiv:2303.04743},
-  year={2023}
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={7665--7693},
+  year={2023},
+  organization={PMLR}
 }
 ```
